@@ -1,0 +1,336 @@
+@import "tailwindcss";
+
+:root {
+  /* Layout and Panels */
+  /* Done */
+
+  --popover: #1f2937;
+  --popover-foreground: #0a0a0a;
+
+  --background: #151a17;
+  --foreground: #fff;
+  --bgBody: #151a17;
+  /* Image */
+  --bgBoardPanel: #141414;
+  --bgBoard: #141414;
+  --bgBetPanel: #1c1c1c;
+  --bgGameFooter: #1c1c1c;
+
+  /* Done */
+  --bgModeSelector: #151a17;
+  --bgModeBtn: #303833;
+  --bgModeBtnHover: #234530;
+  --bgModeText: #9f815f;
+  --bgModeTextSelected: #6e6e6e;
+  --bgModeTextHover: #6e6e6e;
+
+  /* Done */
+  --bgBoxBorder: #2c2e2d;
+  --bgBoxBorderHover: #29342d;
+  --bgBoxLabel: #fff;
+  --bgBox: #151a17;
+  --bgBoxColor: #fff;
+
+  --bgBoxBtn: #151a17;
+  --bgBoxBtnText: #fff;
+  --bgBoxBtnActive: #29342d;
+  --bgBoxBtnHover: #616318;
+
+  --bgBetBtn: #53ba22;
+  --bgBetBtnDisable: #3d3d3d;
+  --bgBetBtnHover: #367c15;
+
+  --bgIncreaseBy: #151a17;
+  --bgIncreaseByActive: #29342d;
+  --bgReset: #23510c;
+  --bgResetActive: #40881c;
+  --bgIncreaseByInput: #151a17;
+  --bgIncreaseByInputActive: #53ba22;
+  --bgBtnHover: #367c15;
+
+  --bgTile: #606218;
+  --bgRevealedTile: #23510c;
+  --bgSelectedTile: #53b525;
+  --bgSelectedTileBorder: #23510c;
+  --bgTileHover: #a4a72f;
+
+  --bgFairnessBtn: #5ea920;
+  --bgFairnessBtnColor: #53ba22;
+  --bgFairnessBtnHover: #367c15;
+  --bgFooterBtn: #1c1c1c;
+  --bgFooterBtnHover: #969696;
+
+  --bgFairnessPanelWrapper: #1c1c1c;
+  --bgFairnessPanel: #1c1c1c;
+  --bgCloseBtn: #fff;
+  --bgCloseBtnHover: #aeacac;
+  --bgCopyBtn: #fff;
+  --bgCopyBtnHover: #aeacac;
+  --bgChangeBtn: #3d5044;
+  --bgChangeBtnHover: #0f5b2b;
+  --bgChangeBtnPlaceholderText: #151a17;
+  --bgVerifyBtn: #303833;
+  --bgVerifyBtnHover: #303833;
+  --bgNonceArrow: #151a17;
+  --bgNonceArrowHover: #293d31;
+  --bgNonceArrowClick: #318251;
+  --bgLoader: #53ba22;
+  --bgGrid: #141414;
+  --bgGridMine: #23520c;
+  --bgGridGem: #23520c;
+
+  --bgHeading: #262626;
+  --bgLeaderboardOptions: #151a17;
+  --bgActiveOption: #40881c;
+  --bgActiveOptionHover: #295a10;
+  --bgTableHeading: #262626;
+  --bgEvenRow: #1e2220;
+  --bgOddRow: #1e2220;
+  --bgRowHover: #181c18;
+  --tabletextColor: #ffffff;
+
+  --bgPopUp: #1c1c1c;
+  --bgPopUpBorder: #2c2c2c;
+  --bgPopUpTitle: #ffffff;
+}
+
+body.dark-mode {
+  /* Page */
+  --popover: #1f2937;
+  --popover-foreground: #fafafa;
+
+  --background: #151a17;
+  --bgBody: #1d2a22;
+  /* --bgBoardPanel: #141414; */
+  --bgBoard: #021d0fcc;
+  --bgBetPanel: #1c1c1c;
+  --bgGameFooter: #1c1c1c;
+
+  /* Navbar */
+  --bgNav: #163407;
+  --bgWallet: #606218;
+  --bgWalletColor: #fff;
+  --bgWalletValue: #ffffff;
+  --bgWalletValueColor: #23520c;
+
+  /* Mode */
+  --bgModeSelector: #1d3226;
+  --bgModeBtn: #3b4e42;
+  --bgModeBtnHover: #234530;
+  --bgModeText: #9f815f;
+  --bgModeTextSelected: #bc9669;
+  --bgModeTextHover: #fff;
+
+  /* Done */
+  --bgBoxBorder: #2c2e2d;
+  --bgBoxBorderHover: #3d5847;
+  --bgBoxLabel: #fff;
+  --bgBoxLabelDisabled: #747474;
+  --bgBox: #151a17;
+  --bgBoxColor: #fff;
+
+  --bgBoxBtn: #151a17;
+  --bgBoxBtnText: #fff;
+  --bgBoxBtnActive: #29342d;
+  --bgBoxBtnHover: #616318;
+
+  /* Bet Btn */
+  --bgBetBtn: #53ba22;
+  --bgBetBtnTxt: #fff;
+  --bgBetBtnTxtDisable: #bababa;
+  --bgBetBtnDisable: #3d3d3d;
+  --bgBetBtnHover: #367c15;
+
+  /* Percentage Adjuster component */
+  --bgActive: #05861d;
+  --bgInactive: #105f1e;
+  --bgActiveText: #fff;
+  --bgInactiveText: #b1bad3;
+  --bgHover: #17852c;
+  --bgInput: #1c1c1c;
+
+  --bgTile: #606218;
+  --bgRevealedTile: #23520c;
+  --bgSelectedTile: #53b525;
+  --bgSelectedTileBorder: #23520c;
+  --bgTileHover: #a4a72f;
+
+  --bgFairnessBtn: #5ea920;
+  --bgFairnessBtnColor: #fff;
+  --bgFairnessBtnHover: #72cd27;
+
+  --bgFooterBtn: #5ea920;
+  --bgFooterBtnHover: #72cd27;
+
+  --bgVolume: #427915;
+  --bgVolSlider: #29620d;
+  --bgThemeIcon: #50932f;
+  --bgThemeIconHover: #53ba22;
+
+  --bgFairnessPanelWrapper: #1c1c1ccc;
+  --bgFairnessPanel: #1c1c1c;
+  --bgFairnessLabelColor: #fff;
+  --bgCloseBtn: #1c1c1c;
+  --bgCloseBtnHover: #898080;
+  --bgFairnessFooter: #111111;
+  /* --bgCopyBtn: #fff; */
+  /* --bgCopyBtnHover: #bbbbbb; */
+  --bgChangeBtn: #5ea920;
+  --bgChangeBtnHover: #72cd27;
+  --bgChangeBtnDisabled: #748197;
+  --bgChangeInputText: #fff;
+  /* --bgChangeBtnPlaceholderText: #151a17;
+  --bgVerifyBtn: #303833;
+  --bgVerifyBtnHover: #303833;
+  --bgNonceArrow: #151a17;
+  --bgNonceArrowHover: #293d31;
+  --bgNonceArrowClick: #318251;
+  --bgLoader: #53ba22; */
+  --bgGrid: #141414;
+  --bgGridGem: #337313;
+  --bgGridMine: #0a280c;
+
+  /* --bgHeading: #262626;
+  --bgLeaderboardOptions: #151a17;
+  --bgActiveOption: #40881c;
+  --bgActiveOptionHover: #295a10;
+  --bgTableHeading: #262626;
+  --bgEvenRow: #1e2220;
+  --bgOddRow: #1e2220;
+  --bgRowHover: #181c18;
+  --tabletextColor: #ffffff; */
+
+  --bgPopUp: #1c1c1c;
+  --bgPopUpBorder: #2c2c2c;
+  --bgPopUpTitle: #ffffff;
+  --bgPopUpColor: #fff;
+}
+
+body.light-mode {
+  --popover: #1f2937;
+  --popover-foreground: #0a0a0a;
+
+  --background: #fff;
+  --bgBody: #fff;
+  /* --bgBoardPanel: #141414; */
+  --bgBoard: #ffffff80;
+  --bgBetPanel: #cacaca;
+  --bgGameFooter: #aaaaaa;
+
+  /* Navbar */
+  --bgNav: #808080;
+  --bgWallet: #c4c0c0;
+  --bgWalletColor: #4d4d4d;
+  --bgWalletValue: #ffffff;
+  --bgWalletValueColor: #808080;
+
+  /* Mode */
+  --bgModeSelector: #808080;
+  --bgModeBtn: #cacaca;
+  --bgModeBtnHover: #9d9d9d;
+  --bgModeText: #fff;
+  --bgModeTextSelected: #323232;
+  --bgModeTextHover: #505050;
+
+  /* Done */
+  --bgBoxBorder: #fff;
+  --bgBoxBorderHover: #fff;
+  --bgBoxLabel: #323232;
+  --bgBoxLabelDisabled: #747474;
+  --bgBox: #fff;
+  --bgBoxColor: #323232;
+
+  --bgBoxBtn: #808080;
+  --bgBoxBtnText: #fff;
+  --bgBoxBtnActive: #7d7d7d;
+  --bgBoxBtnHover: #777777;
+
+  /* Bet Btn */
+  --bgBetBtn: #367617;
+  --bgBetBtnTxt: #fff;
+  --bgBetBtnTxtDisable: #bababa;
+  --bgBetBtnDisable: #367617;
+  --bgBetBtnHover: #367c15;
+
+  /* Percentage Adjuster component */
+  --bgActive: #cacaca;
+  --bgInactive: #808080;
+  --bgActiveText: #fff;
+  --bgInactiveText: #ffffff;
+  --bgHover: #808080;
+  --bgInput: #fff;
+
+  --bgTile: #606218;
+  --bgRevealedTile: #23520c;
+  --bgSelectedTile: #53b525;
+  --bgSelectedTileBorder: #23520c;
+  --bgTileHover: #a4a72f;
+
+  --bgFairnessBtn: #808080;
+  --bgFairnessBtnColor: #fff;
+  --bgFairnessBtnHover: #656565;
+
+  --bgFooterBtn: #fff;
+  --bgFooterBtnHover: #d1cfcf;
+
+  --bgVolume: #fff;
+  --bgVolSlider: #929292;
+  --bgThemeIcon: #fff;
+  --bgThemeIconHover: #d1cfcf;
+
+  --bgFairnessPanelWrapper: #ffffffcc;
+  --bgFairnessPanel: #545454;
+  --bgFairnessLabelColor: #fff;
+  --bgCloseBtn: #545454;
+  --bgCloseBtnHover: #fff;
+  --bgFairnessFooter: #545454;
+  /* --bgCopyBtn: #fff; */
+  /* --bgCopyBtnHover: #bbbbbb; */
+  --bgChangeBtn: #5ea920;
+  --bgChangeBtnHover: #72cd27;
+  --bgChangeBtnDisabled: #748197;
+  --bgChangeInputText: #323232;
+  /* --bgChangeBtnPlaceholderText: #151a17;
+  --bgVerifyBtn: #303833;
+  --bgVerifyBtnHover: #303833;
+  --bgNonceArrow: #151a17;
+  --bgNonceArrowHover: #293d31;
+  --bgNonceArrowClick: #318251;
+  --bgLoader: #53ba22; */
+  --bgGrid: #d8d8d8;
+  --bgGridGem: #8c8f19;
+  --bgGridMine: #40a012;
+
+  /* --bgHeading: #262626;
+  --bgLeaderboardOptions: #151a17;
+  --bgActiveOption: #40881c;
+  --bgActiveOptionHover: #295a10;
+  --bgTableHeading: #262626;
+  --bgEvenRow: #1e2220;
+  --bgOddRow: #1e2220;
+  --bgRowHover: #181c18;
+  --tabletextColor: #ffffff; */
+
+  --bgPopUp: #23510c;
+  --bgPopUpBorder: #fff;
+  --bgPopUpTitle: #ffffff;
+  --bgPopUpColor: #fff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Custom large screen breakpoint at 915px */
+  --breakpoint-custom: 915px;
+}
+
+body {
+  background: var(--background);
+  background-size: cover;
+  background-position: center;
+  /* color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+}
